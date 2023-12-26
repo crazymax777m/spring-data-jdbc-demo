@@ -2,8 +2,6 @@ package ru.flamexander.spring.data.jdbc.demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import ru.flamexander.spring.data.jdbc.demo.entities.Author;
 import ru.flamexander.spring.data.jdbc.demo.repositories.AuthorsRepository;
 
@@ -18,7 +16,7 @@ public class AuthorsService {
         this.authorsRepository = authorsRepository;
     }
 
-    public Optional<Author> findById(@PathVariable Long id) {
+    public Optional<Author> findById(Long id) {
         return authorsRepository.findById(id);
     }
 }
