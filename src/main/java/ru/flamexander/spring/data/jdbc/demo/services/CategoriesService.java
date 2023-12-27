@@ -2,7 +2,6 @@ package ru.flamexander.spring.data.jdbc.demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import ru.flamexander.spring.data.jdbc.demo.dtos.CreateOrUpdateCategoryDtoRq;
 import ru.flamexander.spring.data.jdbc.demo.entities.Category;
 import ru.flamexander.spring.data.jdbc.demo.repositories.CategoriesRepository;

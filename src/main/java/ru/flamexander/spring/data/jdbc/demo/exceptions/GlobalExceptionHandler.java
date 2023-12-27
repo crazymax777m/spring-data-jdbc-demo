@@ -12,4 +12,9 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorDto> catchResourceNotFoundException(ResourceNotFoundException e) {
         return new ResponseEntity<>(new ErrorDto("RESOURCE_NOT_FOUND", e.getMessage()), HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(BadArgumentException.class)
+    public ResponseEntity<ErrorDto> catchBadArgumentException(BadArgumentException e) {
+        return new ResponseEntity<>(new ErrorDto("INVALID_ARGUMENT", e.getMessage()), HttpStatus.BAD_REQUEST);
+    }
 }

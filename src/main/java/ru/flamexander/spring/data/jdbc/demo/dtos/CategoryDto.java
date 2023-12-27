@@ -1,7 +1,5 @@
 package ru.flamexander.spring.data.jdbc.demo.dtos;
 
-import org.springframework.data.relational.core.mapping.Table;
-
 public class CategoryDto {
     private Long id;
     private String title;
